@@ -297,6 +297,7 @@ footer h2 {
     position: relative;
     text-indent: -999px;
     float: left;
+    margin-left: -17px;
     }
 
     #logo a:hover {
@@ -324,7 +325,7 @@ footer h2 {
 
         .showcasebrands-txt{
             color:white;
-            padding: 9rem;
+            padding: 9.2rem;
             font-family: 'Muli', sans-serif;
         }
 
@@ -392,48 +393,48 @@ footer h2 {
 }
 
 .brands-ctn .brand1 {
-    background-image: url(../img/boz1.jpg);
+    background-image: url(../img/boz1.JPG);
     background-size: contain;
     height: 200px;
     width: 25%;
 }
 
 .brands-ctn .brand2 {
-    background-image: url(../img/chef3.jpg);
+    background-image: url(../img/chef3.JPG);
     background-size: contain;
     height: 200px;
     width:  25%;
 }
 
 .brands-ctn .brand3 {
-    background-image: url(../img/brand3.jpg);
+    background-image: url(../img/brand3.JPG);
     background-size: contain;
     height: 200px;
     width:  25%;
 }
 
 .brands-ctn .brand4 {
-    background-image: url(../img/brand4.jpg);
+    background-image: url(../img/brand4.JPG);
     background-size: contain;
     height: 200px;
     width:  25%;
 }
 
 .brands-ctn .brand5 {
-    background-image: url(../img/brand5.jpg);
+    background-image: url(../img/brand5.JPG);
     background-size: contain;
     height: 200px;
     width: 200px;
 }
 
 .brands-ctn .brand6 {
-    background-image: url(../img/brand6.jpg);
+    background-image: url(../img/brand6.JPG);
     background-size: contain;
     height: 200px;
     width: 200px;
 }
 .brands-ctn .brand7 {
-    background-image: url(../img/brand8.jpg);
+    background-image: url(../img/brand8.JPG);
     background-size: contain;
     background-repeat: no-repeat;
     height: 200px;
