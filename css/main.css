@@ -135,16 +135,14 @@ ul {
 		margin-top:40px;
 	}
 		
-	header .highlight, header .current a{
-		color:#e8491d;
-		font-weight:bold;
-	}
+
 	
-	#showcase .showcase-txt a:hover{
-		color:#b2c8d4;
-        font-weight:bold;
-        background-color: white;
-	}
+	
+    
+    nav ul li a:hover {
+        color: #8daec0;
+        cursor: pointer;
+    }
 
 
 /*****SHOWCASE*****/
@@ -199,7 +197,10 @@ ul {
 .main-title a:hover {
     background: #17181a;
 }
-
+#showcase .showcase-txt a:hover{
+    color: #b2c8d4;
+    background-color: white;
+}
 
    
     
