@@ -89,7 +89,7 @@ ul {
 /*****SHOWCASE*****/
 #showcase {
     min-height: 600px;
-    background:url("../img/mauheader.jpg") no-repeat;
+    background:url("../img/mauheader.JPG") no-repeat;
     
   
     text-align:center;
@@ -291,7 +291,7 @@ footer h2 {
     width: 300px;
     height: 6rem;
     margin: 0;
-    background: url(../img/brandslogo.jpg) center left no-repeat;
+    background: url(../img/brandslogo.JPG) center left no-repeat;
     background-size: contain;
     overflow: hidden;
     position: relative;
