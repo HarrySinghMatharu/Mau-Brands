@@ -3,51 +3,27 @@
     margin: 0;
     padding: 0;
 }
-body {
-    font-family: "Roboto", Arial, sans-serif;
-    line-height: 1.8;
-    font-size: 16px;
-    background: #fff;
-    color: #848484;
-    font-weight: 300;
+
+ul {
+    margin: 0;
+    padding: 0;
 }
-
-
-h1, h2, h3, h4, h5, h6 {
-    color: #212121;
-    font-family: "Roboto", Arial, sans-serif;
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
 }
-
-
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-
 /*****NAVIGATION*****/
-.nav-ctn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+.container .nav-ctn {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-h1#logo {
+#logo {
     display: block;
-    width: 500px;
-    height: 5rem;
+    width: 300px;
+    height: 6rem;
     margin: 0;
     background: url(../img/logo.png) center left no-repeat;
     background-size: contain;
@@ -57,89 +33,106 @@ h1#logo {
     float: left;
     }
 
-    .h1#logo a:hover {
+    #logo a:hover {
         
         cursor: pointer;
     }
 
-.nav-ctn ul li {
-    display: inline-block;
+
+	header{
+		
+		color:#ffffff;
+		
+		min-height:70px;
+		
+	}
+	
+	header a{
+		color:#6d6969;
+		text-decoration:none;
+		text-transform:uppercase;
+        font-size:16px;
+        font-family: 'Muli', sans-serif;
+	}
+	
+	
+    header li {
+        float: left;
+        display: inline;
+        padding: 10px 0 0 10px;
+    }
+	
+	header #branding{
+		float:left;
+	}
+	
+	header #branding h1{
+		margin:0;
+	}
+	
+	header nav{
+		float:right;
+		margin-top:40px;
+	}
+		
+	header .highlight, header .current a{
+		color:#e8491d;
+		font-weight:bold;
+	}
+	
+	header a:hover{
+		color:#cccccc;
+		font-weight:bold;
+	}
+
+
+/*****SHOWCASE*****/
+#showcase {
+    min-height: 600px;
+    background:url("../img/mauheader.jpg") no-repeat;
+    
+  
+    text-align:center;
+    color:#000000;
+    
+    
+    
 }
 
-.nav-ctn ul li a {
-    padding: 10px 5px;
-    color: grey;
-    font-size: 1.5rem;
+
+#showcase .showcase-txt{
+		 
+    text-align: right;
+    margin: 15% 0;
+    font-size: 2.5rem;
+
+	}
+	
+
+#showcase .showcase-txt a {
+    height: 38px;
+    background: #b2c8d4;;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 1.8rem;
     text-decoration: none;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-size: 25px;
 }
 
-.nav-ctn ul li a:hover {
-    color: #8daec0;
-    cursor: pointer;
+#showcase .showcase-txt h1 {
+    font-family: 'Muli', sans-serif;
+}
+#showcase .showcase-txt h2 {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
 }
 
-@media (min-width: 1200px) {
-.container {
-    width: 1170px;
-}
-}
-
-
-
-/*****HEADER SECTION*****/
-header {
-    height: 80vh;
-    background-color: #8daec0;
-    background-image: url(../img/branding3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-header .main-title {
-    padding-top: 25vh;
-    padding-left: 33%;
-    display: inline-block;
-}
-
-header .main-title-ctn {
-    padding: 45px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 30px;
-}
-
-.main-title h1 {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 55px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    line-height: 60px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.main-title a {
-    border-radius: 30px;
-    background: #4CB648;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 14px 28px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    opacity: .9;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid transparent;
-    font-size: 14px;
-    line-height: 1.42857;
+#showcase .showcase-txt p {
+    margin-top: -40px;
 }
 
 .main-title a:hover {
@@ -147,70 +140,24 @@ header .main-title-ctn {
 }
 
 
-    @media (max-width: 768px) {
-        header .main-title-ctn {
-            height: 0vh;
-            width: 0vw;
-            padding:0;
-        }
-        .main-title h1 {
-        color: #ffffff;
-        font-family: 'Lato', sans-serif;
-        font-size: 60px;
-        font-weight: 300;
-        margin-top: -50px;
-        margin-bottom: 10px;
-        line-height: 60px;
-        letter-spacing: 1px;
-        margin-bottom: 20px;
-    }
+   
     
     
-    header {
-        height: 70vh;
-        
-        
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background: url(../img/brandingmobile.jpg) no-repeat center center fixed; 
-       -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
-        background-size: cover;
-    }
-    header .main-title {
-        
-        
-        display: inline-block;
-        padding-left: 25%;
-    }
-    
-}
+   
 
 /***** HERO SECTION*****/
 .hero {
     padding-top: 90px;
     padding-bottom: 90px;
-    background: rgba(0, 0, 0, 0.1);
+    
 }
 
-@media (min-width: 1200px) {
-.container {
-    width: 1170px;
-}
-}
 
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 .hero h2 {
     margin-bottom: 30px;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Muli', sans-serif;
     font-size: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -218,9 +165,15 @@ header .main-title-ctn {
     font-weight: 900;
 }
 
+.hero p {
+    font-family: 'Muli', sans-serif;
+}
+
+
 .hero h5 {
     margin-top: 2rem;
     color: rgb(133, 133, 184);
+    font-family: 'Muli', sans-serif;
 }
 
 .hero span{
@@ -235,6 +188,7 @@ header .main-title-ctn {
 /****BOTTOM MENU****/
 .bottom-menu {
             background-color: rgba(0, 0, 0, 0.55);
+            height: 90px;
     }
 
 .bottom-ctn {
@@ -251,12 +205,12 @@ header .main-title-ctn {
 }
 
 .bottom-ctn ul li a {
-    padding: 10px 20px;
+    padding: 0 10px 0 0;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
 }
 
 .bottom-ctn ul li a:hover {
@@ -266,7 +220,7 @@ header .main-title-ctn {
 
 .subscribe {
     color: white;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 1.2rem;
 }
 
@@ -275,9 +229,35 @@ header .main-title-ctn {
 }
 /*****FOOTER*****/
 footer {
-    background: #525355;
-    padding-top: 50px;
-    padding-bottom: 50px;
+   
+    background: #575759;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    /* padding: 1rem 1rem; */
+    height: 90px;
+}
+#footerlogo {
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 0;
+    background: url(../img/footerlogo.jpg) center left no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+    text-indent: -999px;
+    float: left;
+    /* padding: 20px; */
+    margin: 10px 0;
+}
+
+.footercopyright p{
+    font-size: 12px;
+    color: white;
+}
+
+.footercopyright span {
+    font-size: 18px;
 }
 
 footer h2 span {
@@ -299,59 +279,68 @@ footer h2 {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 768px) {
-    .bottom-ctn ul li a {
-   
-      font-size: 1rem;
-  }
-  .subscribe {
-      
-      font-size: 0.8rem;
-  }
-}
 
 
-/*------------------------ BRAND SECTION -------------------*/
-/*-----------BRAND NAV--------*/
-.logo2 span {
-    color: black;
-    font-size: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: 100;
-}
-.logo2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    font-family: 'Audiowide', cursive;
+
+
+
+/********brands*************/
+/***brands logo***/
+#logo2 {
+    display: block;
+    width: 300px;
+    height: 6rem;
+    margin: 0;
+    background: url(../img/brandslogo.jpg) center left no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+    text-indent: -999px;
+    float: left;
+    }
+
+    #logo a:hover {
+        
+        cursor: pointer;
+    }
+
+.brandsection {
+    background-color: #7da0b4;
+    height: 45vh;
+    font-size: 24px;
 }
 
-/*--------BRAND HEADER-------*/
-.brands-header{
-    display: flex;
-    align-items: center;
-    background-color: #8daec0;
-}
+    .showcasebrands-img{
+        float:right;
+        margin: 100px 100px 0 0;
+    }
+    
 
-.brands-header .container h2{
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-    font-family: 'Audiowide', cursive;
-}
+   .container .showcasebrands-txt h1{
+       color:white;      
+       font-size: 5rem;
+       margin: 200px 0 0 120px;
+        }
 
-.brands-header img{
-    padding:0;
-    margin:0;
-}
+        .showcasebrands-txt{
+            color:white;
+            padding: 9rem;
+            font-family: 'Muli', sans-serif;
+        }
 
-.brand-hero .container p{
-    padding: 100px 0px;
-}
+    /********brand hero*********/
+    .brand-hero {
+        background-color: #F8F8F8;
+    }
+    .brand-hero p {
+        padding: 60px 0;
+    }
+/****brand gallery*******/
+
 .brands-section {
     text-align: center;
-   
-    padding-bottom: 90px;
+    padding-top: 90px;
+    
 
 }
 
@@ -365,7 +354,7 @@ footer h2 {
     
 }
 
-.brands-section .container p {
+.trainers-section .container p {
     margin-bottom: 1.5em;
     font-size: 20px;
     color: #848484;
@@ -383,7 +372,7 @@ footer h2 {
     flex-wrap: wrap;
 }
 
-.brands-ctn  .brand {
+.brands-ctn  .trainer {
     width: 30%;
     margin-bottom: 30px;
     position: relative;
@@ -395,50 +384,63 @@ footer h2 {
 .brands-ctn .brand3,
 .brands-ctn .brand4,
 .brands-ctn .brand5,
-.brands-ctn .brand6,
-.brands-ctn .brand7 {
+.brands-ctn .brand6 {
     
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 450px;
 }
 
 .brands-ctn .brand1 {
-    background-image: url(../img/Logoboz.png);
+    background-image: url(../img/boz1.jpg);
     background-size: contain;
+    height: 200px;
+    width: 25%;
 }
 
 .brands-ctn .brand2 {
-    background-image: url(../img/Chef1.jpg);
+    background-image: url(../img/chef3.jpg);
     background-size: contain;
+    height: 200px;
+    width:  25%;
 }
 
 .brands-ctn .brand3 {
-    background-image: url(../img/mekkapro.jpg);
+    background-image: url(../img/brand3.jpg);
     background-size: contain;
+    height: 200px;
+    width:  25%;
 }
 
 .brands-ctn .brand4 {
-    background-image: url(../img/Parallel.jpg);
+    background-image: url(../img/brand4.jpg);
     background-size: contain;
+    height: 200px;
+    width:  25%;
 }
 
 .brands-ctn .brand5 {
-    background-image: url(../img/PrecisionDefined.jpg);
+    background-image: url(../img/brand5.jpg);
     background-size: contain;
+    height: 200px;
+    width: 200px;
 }
 
 .brands-ctn .brand6 {
-    background-image: url(../img/VERRECOLLECTION.jpg);
+    background-image: url(../img/brand6.jpg);
     background-size: contain;
+    height: 200px;
+    width: 200px;
 }
-
 .brands-ctn .brand7 {
-    background-image: url(../img/ZBRANDS.png);
+    background-image: url(../img/brand8.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
 }
 
-.brand .overlay{
+/*.brand .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -447,7 +449,7 @@ footer h2 {
     padding-top: 800px;
     transition: all 0.5s ease;
     
-}
+}*/
 
 .brand .overlay:hover{
     
@@ -466,7 +468,9 @@ footer h2 {
     font-size: 30px;
 }
 
-
+.overlay .brand-details .social-brand {
+   
+}
 
 .overlay .brand-details i {
     padding: 10px;
@@ -474,294 +478,4 @@ footer h2 {
     background-color: #fff;
     color: #000;
     display: inline-block;
-}
-
-/*******INVESTMENT NAV*********/
-.logo2 span {
-    color: black;
-    font-size: 2rem;
-    font-family: 'Audiowide', cursive;
-    font-weight: 100;
-}
-.logo2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    font-family: 'Audiowide', cursive;
-}
-
-
-
-/********INVESTMENT HEADER*******/
-/*.investment-header{
-    height: 35vh;
-    background-color: #8daec0;
-    background-image: url(../img/invest1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    background-position-x: 80%;
-    
-}*/
-.investment-header{
-    display: flex;
-    align-items: center;
-    background-color: #8daec0;
-}
-
-.investment-header h2 {
-    color: white;
-    
-}
-
-/******INVESTMENT HERO*****/
-.investment-hero{
-    display: flex;
-    align-items: center;
-}
-
-.container2{
-    padding: 50px;
-}
-
-.container2 h1{
-    font-family: 'Audiowide', cursive;
-}
-
-.below {
-    padding: 10px 50px 50px 200px;
-}
-
-.investicon {
-    
-    padding: 30px 30px 10px 200px;
-}
-
-
-
-/*.below {
-    clear: both;
-}
-
-
-
-
-
-/*****TEAM*****/
-/*****HEADER TEAM*****/
-.teamheader {
-    height: 50vh;
-    background-color: #8daec0;
-    background-image: url(../img/team.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.teamheader .team-title {
-    padding-top: 15vh;
-    padding-left: 33%;
-    display: inline-block;
-}
-
-.teamheader .team-title-ctn {
-    padding: 45px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-style: solid;
-}
-
-.team-title h1 {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 55px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    line-height: 60px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-
-.team-title a {
-    border-radius: 30px;
-    background: #4CB648;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 14px 28px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    opacity: .9;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    cursor: pointer;
-    border: 1px solid transparent;
-    font-size: 14px;
-    line-height: 1.42857;
-}
-
-.team-title a:hover {
-    background: #17181a;
-}
-
-/*****TEAM GALLERY*****/
-/*------------------------ TRAINERS SECTION -------------------*/
-
-.trainers-section {
-    text-align: center;
-    padding-top: 50px;
-   
-
-}
-
-.trainers-section .container h2 {
-    font-size: 24px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    font-weight: 900;
-    margin-bottom: 30px;
-    
-}
-
-.trainers-section .container p {
-    margin-bottom: 1.5em;
-    font-size: 20px;
-    color: #8daec0;
-    font-family: "Roboto", Arial, sans-serif;
-}
-
-.trainers-ctn {
-    position: relative;
-    background-size: cover;
-    
-    margin-bottom: 30px;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.trainers-ctn  .trainer {
-    width: 30%;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.trainers-ctn .trainer1,
-.trainers-ctn .trainer2,
-.trainers-ctn .trainer3,
-.trainers-ctn .trainer4,
-.trainers-ctn .trainer5,
-.trainers-ctn .trainer6 {
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: contain;
-}
-
-.trainers-ctn .trainer1 {
-    background-image: url(../img/team1.jpeg);
-}
-
-.trainers-ctn .trainer2 {
-    background-image: url(../img/team2.jpeg);
-}
-
-.trainers-ctn .trainer3 {
-    background-image: url(../img/team3.jpeg);
-}
-
-.trainers-ctn .trainer4 {
-    background-image: url(../img/team4.jpeg);
-}
-
-.trainers-ctn .trainer5 {
-    background-image: url(../img/team5.jpeg);
-}
-
-.trainers-ctn .trainer6 {
-    background-image: url(../img/team6.jpeg);
-}
-
-.trainer .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    transition: all 0.5s ease;
-    padding-top: 800px;
-    transition: all 0.5s ease;
-    
-}
-
-.trainer .overlay:hover{
-    
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-top: 10px;
-}
-
-.overlay .trainer-details {
-    color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.overlay .trainer-details h3  {
-    color: #8daec0;
-    font-size: 30px;
-}
-
-.overlay .trainer-details .social-trainer {
-   
-}
-
-.overlay .trainer-details i {
-    padding: 10px;
-    margin-right: 5px;
-    background-color: #fff;
-    color: #000;
-    display: inline-block;
-}
-
-/*-----ABOUT--------*/
-/*-------ABOUT-HEADER-------*/
-/*------ABOUT-HERO--------*/
-/* Boxes */
-	
-.about-boxes {
-    
-    margin: .5vw;
-    
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: flex;
-    padding: 0px 100px 120px 100px;
-}
-
-.about-boxes .box {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 200px;
-    margin: .5vw
-}
-
-.about-boxes img{
-    background-size: contain;
-}
-.about-boxes .box img{
-    
-    width: 100%;
-    height: 100%;
-    
 }
